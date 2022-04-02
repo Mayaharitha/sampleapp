@@ -5,9 +5,9 @@ files:
     destination: /var/www/html/
 hooks:
   BeforeInstall:
-    - location: scripts/httpd_install.sh
+    - location: scripts/install_dependencies
       timeout: 300
       runas: root
-    - location: scripts/httpd_start.sh
+    - location: scripts/start_server
       timeout: 300
       runas: root
